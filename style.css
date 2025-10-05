@@ -10,6 +10,9 @@ body {
   background: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Encabezado con fondo negro */
@@ -19,10 +22,10 @@ header h1 {
   color: white;
   background-color: black;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 30px; /* más grande */
   border-radius: 10px;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 /* Contenedor de cajas */
@@ -30,7 +33,9 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;          /* más separación */
+  width: 100%;
+  max-width: 1600px;  /* límite para pantallas grandes */
   padding: 20px;
 }
 
@@ -38,24 +43,28 @@ header h1 {
 .caja {
   background: rgba(255,255,255,0.95);
   border-radius: 25px;
-  flex: 1 1 400px;  /* más grande */
-  max-width: 450px; /* más grande */
-  padding: 25px;
+  flex: 1 1 500px;     /* base grande para crecer */
+  max-width: 600px;    /* más ancho */
+  min-height: 700px;   /* altura mínima para verse grande */
+  padding: 30px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* que el contenido se distribuya bien */
 }
 
 /* Hover “levantar” */
 .caja:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  transform: translateY(-15px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.5);
 }
 
-/* Mapas */
+/* Mapas más grandes */
 .mapa {
   width: 100%;
-  height: 220px;
+  height: 300px;   /* altura más impactante */
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -66,24 +75,37 @@ header h1 {
 .boton {
   display: inline-block;
   width: 100%;
-  padding: 12px 0;
+  padding: 15px 0;
   background-color: #0077cc;
   color: white;
   text-decoration: none;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-top: 10px;
 }
 
 /* Responsivo */
+@media (max-width: 1200px) {
+  .caja {
+    flex: 1 1 45%; /* 2 cajas por fila */
+  }
+}
+
 @media (max-width: 768px) {
   .caja {
-    max-width: 90%;
+    flex: 1 1 90%; /* 1 caja por fila */
+    min-height: auto;
   }
 
   header h1 {
     font-size: 8vw;
+    padding: 10px 20px;
+  }
+
+  .mapa {
+    height: 220px;
   }
 }
+
 
 
