@@ -19,6 +19,10 @@ header h1 {
   color: white;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   margin: 20px 0;
+  background-color: black;  /* Cuadro negro de fondo */
+  display: inline-block;    /* Ajusta el ancho al texto */
+  padding: 10px 20px;       /* Espacio alrededor del texto */
+  border-radius: 10px;      /* Bordes redondeados */
 }
 
 /* Contenedor de cajas */
@@ -34,8 +38,8 @@ header h1 {
 .caja {
   background: rgba(255,255,255,0.95);
   border-radius: 20px;
-  flex: 1 1 300px;
-  max-width: 350px;
+  flex: 1 1 380px;  /* Ahora más grande */
+  max-width: 420px; /* Aumentado */
   padding: 20px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -81,6 +85,5 @@ header h1 {
     font-size: 8vw;
   }
 }
-
 
 
