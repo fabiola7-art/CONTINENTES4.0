@@ -1,99 +1,83 @@
-/* Reseteo de márgenes y padding */
-html, body {
+/* Reseteo y fondo */
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
+  background: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #000;
+}
+
+/* Encabezado */
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 /* Contenedor principal */
-.cajita {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-image: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5;
-}
-
-/* Título */
-.titulo {
-  font-size: 2rem;
-  color: white;
-  margin: 20px 0;
-}
-
-/* Contenedor de las cajas */
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
-/* Caja individual */
+/* Cada caja */
 .caja {
-  background: white;
-  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
-  flex: 1 1 300px;
+  flex: 1 1 300px; /* flexible según pantalla */
   max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
-  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Texto dentro de la caja */
-.caja-texto {
-  font-size: 1.2rem;
+/* Títulos de caja */
+.caja h2 {
   margin-bottom: 10px;
 }
 
-/* Mapa dentro de la caja */
-.caja-mapa {
+/* Imágenes */
+.caja img {
   width: 100%;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
+  height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-/* Botón dentro de la caja */
-.caja-boton {
+/* Botones */
+.caja button {
   padding: 10px 20px;
   border: none;
   background-color: #0077cc;
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  text-align: center;
-  width: 100%;
+  font-size: 1rem;
 }
 
-/* Media Queries para pantallas pequeñas */
+/* Responsivo: móviles */
 @media (max-width: 768px) {
-  .titulo {
-    font-size: 1.5rem;
-  }
-
   .contenedor {
     flex-direction: column;
     align-items: center;
   }
 
   .caja {
-    flex: 1 1 100%;
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+  header h1 {
+    font-size: 2rem;
   }
 }
 
