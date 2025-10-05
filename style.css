@@ -1,59 +1,64 @@
-/* Reseteo */
+/* Reseteo de márgenes y padding */
 html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
-/* Fondo principal */
-.cajita-1 {
-  position: fixed;
-  width: 100%;
+/* Contenedor principal */
+.cajita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  background-image: url(https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg);
+  background-image: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg');
   background-size: cover;
   background-position: center;
   opacity: 0.5;
-  z-index: -1;
 }
 
 /* Título */
 .titulo {
-  text-align: center;
-  margin: 20px 0;
   font-size: 2rem;
-  color: #000;
+  color: white;
+  margin: 20px 0;
 }
 
-/* Contenedor principal de cajas */
+/* Contenedor de las cajas */
 .contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Cada caja de continente */
+/* Caja individual */
 .caja {
-  background: #fff;
+  background: white;
   border: 1px solid #ccc;
   border-radius: 10px;
-  flex: 1 1 300px; /* crece y se reduce con la pantalla */
+  flex: 1 1 300px;
   max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
 }
 
-/* Texto */
+/* Texto dentro de la caja */
 .caja-texto {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-/* Mapas */
+/* Mapa dentro de la caja */
 .caja-mapa {
   width: 100%;
   height: 200px;
@@ -63,18 +68,7 @@ html, body {
   margin-bottom: 10px;
 }
 
-/* Mapas individuales */
-.asia-mapa {
-  background-image: url(https://paintmaps.com/og_image/map_chart/map_chart_13.png);
-}
-.america-mapa {
-  background-image: url(https://i.pinimg.com/736x/04/15/43/0415433f817737d3a56f565caa1cf8b5.jpg);
-}
-.europa-mapa {
-  background-image: url(https://images.vexels.com/media/users/3/187951/raw/4238bea89ec11bec6728bf445c80fe63-diseno-de-mapa-de-pais-de-color-de-europa.jpg);
-}
-
-/* Botón */
+/* Botón dentro de la caja */
 .caja-boton {
   padding: 10px 20px;
   border: none;
@@ -82,14 +76,26 @@ html, body {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
+  width: 100%;
 }
 
-/* Responsivo: pantallas pequeñas */
+/* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
+  .titulo {
+    font-size: 1.5rem;
+  }
+
   .contenedor {
     flex-direction: column;
     align-items: center;
   }
+
+  .caja {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
+
 
 
