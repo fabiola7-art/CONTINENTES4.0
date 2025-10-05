@@ -22,7 +22,7 @@ header h1 {
   color: white;
   background-color: black;
   display: inline-block;
-  padding: 15px 30px; /* más grande */
+  padding: 15px 30px;
   border-radius: 10px;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   margin: 30px 0;
@@ -33,9 +33,9 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;          /* más separación */
+  gap: 30px;
   width: 100%;
-  max-width: 1600px;  /* límite para pantallas grandes */
+  max-width: 1800px;  /* mayor límite en pantalla grande */
   padding: 20px;
 }
 
@@ -43,16 +43,16 @@ header h1 {
 .caja {
   background: rgba(255,255,255,0.95);
   border-radius: 25px;
-  flex: 1 1 500px;     /* base grande para crecer */
-  max-width: 600px;    /* más ancho */
-  min-height: 700px;   /* altura mínima para verse grande */
+  flex: 1 1 30%;     /* aproximadamente 3 cajas por fila */
+  max-width: 550px;  /* máximo ancho por caja */
+  min-height: 800px; /* más larga */
   padding: 30px;
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* que el contenido se distribuya bien */
+  justify-content: space-between;
 }
 
 /* Hover “levantar” */
@@ -64,11 +64,11 @@ header h1 {
 /* Mapas más grandes */
 .mapa {
   width: 100%;
-  height: 300px;   /* altura más impactante */
+  height: 350px;   /* más alto para resaltar */
   background-size: cover;
   background-position: center;
   border-radius: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 /* Botones */
@@ -81,13 +81,14 @@ header h1 {
   text-decoration: none;
   border-radius: 12px;
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 /* Responsivo */
 @media (max-width: 1200px) {
   .caja {
     flex: 1 1 45%; /* 2 cajas por fila */
+    min-height: 700px;
   }
 }
 
@@ -103,9 +104,8 @@ header h1 {
   }
 
   .mapa {
-    height: 220px;
+    height: 250px;
   }
 }
-
 
 
