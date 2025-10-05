@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 
-/* Encabezado con fondo negro */
+/* Título con fondo negro */
 header h1 {
   text-align: center;
   font-size: 4vw;
@@ -35,7 +35,7 @@ header h1 {
   justify-content: center;
   gap: 30px;
   width: 100%;
-  max-width: 1800px;  /* mayor límite en pantalla grande */
+  max-width: 1800px;
   padding: 20px;
 }
 
@@ -43,9 +43,9 @@ header h1 {
 .caja {
   background: rgba(255,255,255,0.95);
   border-radius: 25px;
-  flex: 1 1 30%;     /* aproximadamente 3 cajas por fila */
-  max-width: 550px;  /* máximo ancho por caja */
-  min-height: 800px; /* más larga */
+  flex: 1 1 30%;   /* 3 cajas por fila */
+  max-width: 600px;
+  min-height: 900px; /* cajas más largas */
   padding: 30px;
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
@@ -61,10 +61,10 @@ header h1 {
   box-shadow: 0 20px 35px rgba(0,0,0,0.5);
 }
 
-/* Mapas más grandes */
+/* Mapas grandes */
 .mapa {
   width: 100%;
-  height: 350px;   /* más alto para resaltar */
+  height: 350px;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -107,5 +107,7 @@ header h1 {
     height: 250px;
   }
 }
+
+
 
 
