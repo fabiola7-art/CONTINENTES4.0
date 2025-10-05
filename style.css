@@ -44,7 +44,7 @@ header h1 {
   background: rgba(255,255,255,0.95);
   border-radius: 25px;
   flex: 1 1 30%;   /* 3 cajas por fila */
-  max-width: 800px;/*zanchas? le movi de 600*/
+  max-width: 1000px;/*zanchas? le movi de 600*/
   min-height: 900px; /* cajas más largas */
   padding: 30px;
   text-align: center;
@@ -73,13 +73,13 @@ header h1 {
 
 /* Títulos dentro de las cajas */
 .caja h2 {
-  font-size: 4rem;  /* más grande */
+  font-size: 2rem;  /* más grande */
   margin-bottom: 20px;
 }
 
 /* Texto de párrafo dentro de las cajas */
 .caja p {
-  font-size: 1.4rem;  /* más grande */
+  font-size: 1.2rem;  /* más grande */
   line-height: 1.7;
   text-align: justify;
 }
@@ -132,6 +132,7 @@ header h1 {
     font-size: 1.2rem;
   }
 }
+
 
 
 
