@@ -79,7 +79,7 @@ header h1 {
 
 /* Texto de párrafo dentro de las cajas */
 .caja p {
-  font-size: 1.2rem;  /* más grande */
+  font-size: 1.3rem;  /* más grande */
   line-height: 1.7;
   text-align: justify;
 }
@@ -132,6 +132,7 @@ header h1 {
     font-size: 1.2rem;
   }
 }
+
 
 
 
