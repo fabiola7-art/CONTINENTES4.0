@@ -12,17 +12,17 @@ body {
   min-height: 100vh;
 }
 
-/* Encabezado */
+/* Encabezado con fondo negro */
 header h1 {
   text-align: center;
   font-size: 4vw;
   color: white;
+  background-color: black;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
   margin: 20px 0;
-  background-color: black;  /* Cuadro negro de fondo */
-  display: inline-block;    /* Ajusta el ancho al texto */
-  padding: 10px 20px;       /* Espacio alrededor del texto */
-  border-radius: 10px;      /* Bordes redondeados */
 }
 
 /* Contenedor de cajas */
@@ -30,17 +30,17 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
 }
 
 /* Cada caja */
 .caja {
   background: rgba(255,255,255,0.95);
-  border-radius: 20px;
-  flex: 1 1 380px;  /* Ahora más grande */
-  max-width: 420px; /* Aumentado */
-  padding: 20px;
+  border-radius: 25px;
+  flex: 1 1 400px;  /* más grande */
+  max-width: 450px; /* más grande */
+  padding: 25px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -55,7 +55,7 @@ header h1 {
 /* Mapas */
 .mapa {
   width: 100%;
-  height: 200px;
+  height: 220px;
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -66,11 +66,11 @@ header h1 {
 .boton {
   display: inline-block;
   width: 100%;
-  padding: 10px 0;
+  padding: 12px 0;
   background-color: #0077cc;
   color: white;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 12px;
   font-size: 1rem;
   margin-top: 10px;
 }
