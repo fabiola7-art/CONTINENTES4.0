@@ -34,7 +34,7 @@ html, body {
   top:120px;
   left:50px;
   width: 550px;
-  height: 1150px;
+  height: 1250px;
   border: 1px solid;
 }
 
@@ -44,7 +44,7 @@ html, body {
   top:120px;
   left:770px;
   width: 550px;
-  height: 1150px;
+  height: 1250px;
   border: 1px solid;
 }
 
@@ -55,7 +55,7 @@ html, body {
   top:120px;
   left:1500px;
   width: 550px;
-  height: 1180px;
+  height: 1250px;
   border: 1px solid;
 }
 
@@ -136,6 +136,66 @@ html, body {
   background-repeat: no-repeat;
   background-size: 650px 400px;
   position:absolute;
+  top:870px;
+  left:1520px;
+  width: 515px;
+  height: 500px;
+}
+
+.cajita-14{ /*caja boton europa*/
+  background:#FFFFFF;
+  position:absolute;
+  top:1300px;
+  left:1750px;
+  width: 200px;
+  height: 50px;
+}
+.cajita-9{ /*caja texto america*/
+  background-image:url();
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:200px;
+  left:790px;
+  width: 515px;
+  height: 500px;
+}
+
+.cajita-10{ /*caja mapa america*/
+  background-image:url(https://i.pinimg.com/736x/04/15/43/0415433f817737d3a56f565caa1cf8b5.jpg);
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:860px;
+  left:780px;
+  width: 515px;
+  height: 500px;
+}
+
+.cajita-11{ /*caja boton america*/
+  background:#FFFFFF;
+  position:absolute;
+  top:1300px;
+  left:955px;
+  width: 200px;
+  height: 50px;
+}
+
+.cajita-12{ /*caja texto europa*/
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:200px;
+  left:1530px;
+  width: 500px;
+  height: 500px;
+}
+
+.cajita-13{ /*caja mapa europa*/
+  background-image:url(https://images.vexels.com/media/users/3/187951/raw/4238bea89ec11bec6728bf445c80fe63-diseno-de-mapa-de-pais-de-color-de-europa.jpg);
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
   top:880px;
   left:1520px;
   width: 515px;
@@ -150,4 +210,5 @@ html, body {
   width: 200px;
   height: 50px;
 }
+
 
