@@ -1,0 +1,152 @@
+/* Reseteo márgenes y altura para que no haya espacio extra */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Contenedor principal que ocupa todo el espacio */
+.cajita {
+  height: 100%;
+  width: 100%;
+}
+
+/* Caja que ocupa toda la pantalla */
+.cajita-1{
+  background-image:url(https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg);
+  background-repeat: no-repeat;
+  opacity:0.5;
+  width: 100vw;
+  height: 100vw;
+}
+
+.cajita-2{ /*caja titulo CONTINENTES*/
+  position:absolute;
+  top:10px;
+  left:800px;
+  width: 370px;
+  height: 60px;
+}
+
+.cajita-3{ /*caja ASIA*/
+  background:#FFFFFF;
+  position:absolute;
+  top:120px;
+  left:50px;
+  width: 550px;
+  height: 1150px;
+  border: 1px solid;
+}
+
+.cajita-4{ /*caja AMERICA*/
+  background:#FFFFFF;
+  position:absolute;
+  top:120px;
+  left:770px;
+  width: 550px;
+  height: 1150px;
+  border: 1px solid;
+}
+
+
+.cajita-5{ /*caja EUROPA*/
+  background:#FFFFFF;
+  position:absolute;
+  top:120px;
+  left:1500px;
+  width: 550px;
+  height: 1180px;
+  border: 1px solid;
+}
+
+
+.cajita-6{ /*caja texto asia*/
+  background:#FFFFFF;
+  position:absolute;
+  top:200px;
+  left:70px;
+  width: 515px;
+  height: 50px;
+}
+
+.cajita-7{ /*caja mapa asia*/
+  background-image:url(https://paintmaps.com/og_image/map_chart/map_chart_13.png);
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:840px;
+  left:65px;
+  width: 515px;
+  height: 500px;
+}
+
+.cajita-8{ /*caja boton asia*/
+  background:#FFFFFF;
+  position:absolute;
+  top:1300px;
+  left:210px;
+  width: 200px;
+  height: 50px;
+}
+
+
+.cajita-9{ /*caja texto america*/
+  background-image:url();
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:200px;
+  left:790px;
+  width: 515px;
+  height: 500px;
+}
+
+.cajita-10{ /*caja mapa america*/
+  background-image:url(https://i.pinimg.com/736x/04/15/43/0415433f817737d3a56f565caa1cf8b5.jpg);
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:860px;
+  left:780px;
+  width: 515px;
+  height: 500px;
+}
+
+.cajita-11{ /*caja boton america*/
+  background:#FFFFFF;
+  position:absolute;
+  top:1300px;
+  left:955px;
+  width: 200px;
+  height: 50px;
+}
+
+.cajita-12{ /*caja texto europa*/
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:200px;
+  left:1530px;
+  width: 500px;
+  height: 500px;
+}
+
+.cajita-13{ /*caja mapa europa*/
+  background-image:url(https://images.vexels.com/media/users/3/187951/raw/4238bea89ec11bec6728bf445c80fe63-diseno-de-mapa-de-pais-de-color-de-europa.jpg);
+  background-repeat: no-repeat;
+  background-size: 650px 400px;
+  position:absolute;
+  top:880px;
+  left:1520px;
+  width: 515px;
+  height: 500px;
+}
+
+.cajita-14{ /*caja boton europa*/
+  background:#FFFFFF;
+  position:absolute;
+  top:1300px;
+  left:1750px;
+  width: 200px;
+  height: 50px;
+}
