@@ -1,72 +1,55 @@
-/* Reseteo */
+/* Reseteo y fondo */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  font-family: Cambria, serif;
-}
-
-/* Fondo de toda la pantalla */
 body {
+  font-family: Cambria, serif;
   background: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg') no-repeat center center fixed;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
 }
 
-/* Título principal */
-.cajita-2 {
-  margin: 20px 0;
+/* Encabezado */
+header h1 {
+  text-align: center;
   font-size: 4vw;
   color: white;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  margin: 20px 0;
 }
 
 /* Contenedor de cajas */
-.cajita {
+.contenedor {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  width: 90%;
-  padding-bottom: 50px;
+  padding: 20px;
 }
 
-/* Cada caja de continente */
-.cajita-3, .cajita-4, .cajita-5 {
-  background: rgba(255, 255, 255, 0.95);
+/* Cada caja */
+.caja {
+  background: rgba(255,255,255,0.95);
   border-radius: 20px;
   flex: 1 1 300px;
   max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px;
+  text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Efecto hover “levantar” */
-.cajita-3:hover, .cajita-4:hover, .cajita-5:hover {
+/* Hover “levantar” */
+.caja:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 25px rgba(0,0,0,0.5);
 }
 
-/* Texto dentro de la caja */
-.cajita-6, .cajita-9, .cajita-12 {
-  text-align: justify;
-  margin-bottom: 15px;
-}
-
-/* Botón con imagen del mapa */
-.cajita-7, .cajita-10, .cajita-13 {
+/* Mapas */
+.mapa {
   width: 100%;
   height: 200px;
   background-size: cover;
@@ -75,39 +58,27 @@ body {
   margin-bottom: 15px;
 }
 
-.cajita-7 { background-image: url('https://paintmaps.com/og_image/map_chart/map_chart_13.png'); }
-.cajita-10 { background-image: url('https://i.pinimg.com/736x/04/15/43/0415433f817737d3a56f565caa1cf8b5.jpg'); }
-.cajita-13 { background-image: url('https://images.vexels.com/media/users/3/187951/raw/4238bea89ec11bec6728bf445c80fe63-diseno-de-mapa-de-pais-de-color-de-europa.jpg'); }
-
-/* Botones debajo de cada continente */
-.cajita-8 button, .cajita-11 button, .cajita-14 button {
-  padding: 10px 20px;
-  border: none;
+/* Botones */
+.boton {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
   background-color: #0077cc;
   color: white;
-  font-size: 1rem;
+  text-decoration: none;
   border-radius: 10px;
-  cursor: pointer;
-  width: 100%;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
-/* Responsivo para móviles */
+/* Responsivo */
 @media (max-width: 768px) {
-  .cajita-2 {
-    font-size: 8vw;
-  }
-
-  .cajita {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cajita-3, .cajita-4, .cajita-5 {
+  .caja {
     max-width: 90%;
   }
 
-  .cajita-7, .cajita-10, .cajita-13 {
-    height: 180px;
+  header h1 {
+    font-size: 8vw;
   }
 }
 
