@@ -1,85 +1,90 @@
-/* Reseteo y fondo */
-* {
+/* Estilo general */
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  height: 100%;
+  font-family: "Times New Roman", serif;
+  background-color: #f7f7f7;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: url('https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  color: #000;
-}
-
-/* Encabezado */
-header h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 20px 0;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
-/* Contenedor principal */
-.contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* Cada caja */
-.caja {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
-  flex: 1 1 300px; /* flexible según pantalla */
-  max-width: 350px;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Títulos de caja */
-.caja h2 {
-  margin-bottom: 10px;
-}
-
-/* Imágenes */
-.caja img {
+.cajita {
+  height: 100%;
   width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  position: relative;
 }
 
-/* Botones */
-.caja button {
-  padding: 10px 20px;
-  border: none;
-  background-color: #0077cc;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+.cajita-1 {
+  background-image: url(https://www.muyinteresante.com/wp-content/uploads/sites/5/2023/11/20/655b626c0e75a.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-/* Responsivo: móviles */
-@media (max-width: 768px) {
-  .contenedor {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .caja {
-    max-width: 90%;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
+.cajita-2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
 }
 
+/* Cajas individuales */
+.link-caja {
+  text-decoration: none;
+  color: black;
+}
+
+.cajita-3, .cajita-4, .cajita-5 {
+  background: #fff;
+  border: 2px solid #000;
+  width: 500px;
+  padding: 20px;
+  margin: 40px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cajita-3:hover, .cajita-4:hover, .cajita-5:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.cajita-6, .cajita-9, .cajita-12 {
+  font-family: Cambria, serif;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+/*Mapas */
+.cajita-7 {
+  background-image: url(https://paintmaps.com/og_image/map_chart/map_chart_13.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.cajita-10 {
+  background-image: url(https://i.pinimg.com/736x/04/15/43/0415433f817737d3a56f565caa1cf8b5.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.cajita-13 {
+  background-image: url(https://images.vexels.com/media/users/3/187951/raw/4238bea89ec11bec6728bf445c80fe63-diseno-de-mapa-de-pais-de-color-de-europa.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  margin-top: 20px;
+}
 
 
