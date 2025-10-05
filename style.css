@@ -71,6 +71,19 @@ header h1 {
   margin-bottom: 20px;
 }
 
+/* Títulos dentro de las cajas */
+.caja h2 {
+  font-size: 2rem;  /* más grande */
+  margin-bottom: 20px;
+}
+
+/* Texto de párrafo dentro de las cajas */
+.caja p {
+  font-size: 1.3rem;  /* más grande */
+  line-height: 1.7;
+  text-align: justify;
+}
+
 /* Botones */
 .boton {
   display: inline-block;
@@ -80,7 +93,7 @@ header h1 {
   color: white;
   text-decoration: none;
   border-radius: 12px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;  /* más grande */
   margin-top: 15px;
 }
 
@@ -106,8 +119,19 @@ header h1 {
   .mapa {
     height: 250px;
   }
-}
 
+  .caja h2 {
+    font-size: 1.8rem;
+  }
+
+  .caja p {
+    font-size: 1.1rem;
+  }
+
+  .boton {
+    font-size: 1.2rem;
+  }
+}
 
 
 
