@@ -62,7 +62,8 @@ main {
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px;
-  width: calc(25% - 20px); /* 4 tarjetas por fila */
+  width: calc(33% - 20px); /* 4 tarjetas por fila */
+  heigth: 200px;/*ola*/
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -115,3 +116,4 @@ footer {
   }
 
 }
+
