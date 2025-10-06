@@ -97,17 +97,7 @@ header h1 {
   margin-top: 15px;
 }
 
-.botonwire {
-  display: inline-block;
-  width: 100%;
-  padding: 15px 0;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  font-size: 1.4rem;  /* más grande */
-  margin-top: 15px;
-}
+
 
 /* Responsivo */
 @media (max-width: 1200px) {
@@ -144,6 +134,7 @@ header h1 {
     font-size: 1.2rem;
   }
 }
+
 
 
 
