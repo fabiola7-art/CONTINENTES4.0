@@ -1,0 +1,133 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, serif;
+  background: url('https://img.freepik.com/fotos-premium/fondo-papel-pastel-verde-oliva-oscuro_696657-1134.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título con fondo negro */
+header h1 {
+  text-align: center;
+  font-size: 3vw;
+  color:#2E2300;
+  background-color:#2E2300;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 10px;
+ 
+  margin: 30px 0;
+}
+
+/* Contenedor de cajas */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1800px;
+  padding: 20px;
+}
+
+/* Cada caja */
+.caja {
+  background:#F7F1E5;
+  border-radius: 25px;
+  flex: 1 1 30%;   /* 3 cajas por fila */
+  max-width: 1000px;/zanchas? le movi de 600/
+  min-height: 900px; /* cajas más largas */
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Hover “levantar” */
+.caja:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.5);
+}
+
+/* Mapas grandes */
+.mapa {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Títulos dentro de las cajas */
+.caja h2 {
+  font-size: 2rem;  /* más grande */
+  margin-bottom: 20px;
+}
+
+/* Texto de párrafo dentro de las cajas */
+.caja p {
+  font-size: 1.3rem;  /* más grande */
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* Botones */
+.boton {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #2E2300;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.4rem;  /* más grande */
+  margin-top: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  .caja {
+    flex: 1 1 45%; /* 2 cajas por fila */
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .caja {
+    flex: 1 1 90%; /* 1 caja por fila */
+    min-height: auto;
+  }
+
+  header h1 {
+    font-size: 8vw;
+    padding: 10px 20px;
+  }
+
+  .mapa {
+    height: 250px;
+  }
+
+  .caja h2 {
+    font-size: 1.8rem;
+  }
+
+  .caja p {
+    font-size: 1.1rem;
+  }
+
+  .boton {
+    font-size: 1.2rem;
+  }
+}
