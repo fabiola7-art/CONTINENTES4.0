@@ -8,8 +8,8 @@
 /* General */
 body {
  font-family: Arial, sans-serif;
-  background-color: #DFF2FE;
-  color: #333;
+  background-color: #F7F1E5;
+  color: #2e2300;
   font-size: 18px; /* Tamaño de fuente más grande */
   line-height: 1.6;
 }
@@ -17,8 +17,8 @@ body {
 
 /* Header */
 header {
-  background-color: #FFBA03;
-  color: #CB0634;
+background-color: #C1C99A;
+  color: #2e2300;
   padding: 20px;
   text-align: center;
 }
@@ -113,4 +113,5 @@ footer {
   .pais {
     width: 100%; /* 1 por fila */
   }
+
 }
